@@ -1,32 +1,54 @@
 #include<iostream>
-#include <climits>
+#include<climits>
 using namespace std;
 
-int getMin(int num,int n){
-    int min = INT_MAX;
+int getMax(int num[],int n){
+    int max = INT_MIN;
+
+// int maxi = INT_MIN;
+
     for(int i = 0;i<n;i++){
+
+// maxi = max(maxi,num[i]);
+
+
+        if(num[i] > max){
+            max = num[i];
+        }
+    }
+
+// return maxi;
+
+    return max;
+}
+int getMin(int num[],int n){
+    int min = INT_MAX;
+
+// int mini = INT_MAX;
+
+    for(int i = 0;i<n;i++){
+
+// another way: 
+//     mini = min(mini,num[i]);
+
         if(num[i]<min){
             min = num[i];
         }
     }
     return min;
+
+// return mini;
+
 }
-int getMax(int num,int n){
-    int max = INT_MIN;
-    for(int i = 0;i<n;i++){
-        if(num[i]> max){
-            max = num[i];
-        }
-    }
-    return max;
-}
-int main(){
+int main()
+{
     int size;
+    int num[100];
     cin>>size;
-    int num[10];
     for(int i = 0;i<size;i++){
         cin>>num[i];
     }
-    cout<<"Maximum of array:"<< getMax[num,size] <<endl;
-    cout<<"Minimum of array:"<<getMin[num, size]<<endl;
+  cout<<"Maximum element in the array is " <<getMax(num,size)<<endl;
+   cout<<"Minimum element in the array is " <<getMin(num,size)<<endl;
+   return 0;
 }
