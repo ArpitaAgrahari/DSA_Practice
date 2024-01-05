@@ -2,7 +2,7 @@
 using namespace std;
 void printArray(int arr[],int size){
     for(int i =0;i<size;i++){
-        cout<<arr[i]<<" "<<endl;
+        cout<<arr[i]<<" ";
     }
 }
 int rotatedArray(int arr[],int size){
@@ -18,7 +18,11 @@ int rotatedArray(int arr[],int size){
         }
         swap(temp1,temp2);
     }
+    mid = (start +end);
 }
 int main(){
     int arr[6] = {1,2,3,4,5,6};
+    printArray(arr,6);
+    rotatedArray(arr,6);
+    cout<<"Rotated Array is:"<<rotatedArray(arr,6);
 }
