@@ -36,7 +36,7 @@ int firstOccurance(int arr[],int size,int key){
 //     return ans;
 // }
 int main(){
-    int arr[6] = {1,1,2,2,3,4};
-    cout<<"First Occurance of key is:"<<firstOccurance(arr,6,1);
+    int arr[6] = {1,2,2,2,3,4};
+    cout<<"First Occurance of key is:"<<firstOccurance(arr,6,2);
     return 0;
 }
