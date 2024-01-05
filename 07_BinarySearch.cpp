@@ -29,4 +29,5 @@ int main(){
     int index = binarySearching(arr,5,2);
     cout<<"Index of key is:"<<index;
     return 0;
+    //binary search is use and gives o(n) time complexity
 }
