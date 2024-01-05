@@ -6,19 +6,21 @@ void printArray(int arr[],int size){
     }
 }
 int rotatedArray(int arr[],int size){
-    int start = 0;
-    int end = size-1;
-    int temp1,temp2;
-    int mid = (start+end)/2;
-    while(start<=end){
-        if(end<=mid){
-            arr[mid] = temp1;
-        }else if(end>=mid){
-            arr[mid] = temp2;
-        }
-        swap(temp1,temp2);
+    int full[size];
+    int fir[size/2];
+    int sec[size/2];
+    int i;
+    for(int i = 0;i<size;++i){
+        fir[i] = full[i];
     }
-    mid = (start +end);
+    for(int i =0 ;i<size;++i){
+        sec[i-(size/2)] = full[i];
+    }
+    while(fir<=sec){
+       
+        swap(fir[size/2],sec[i-(size/2)]);
+    }
+
 }
 int main(){
     int arr[6] = {1,2,3,4,5,6};
