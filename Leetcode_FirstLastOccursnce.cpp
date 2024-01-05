@@ -26,7 +26,7 @@ int lastOccurance(int arr[],int size,int key){
     while(start<=end){
         if(arr[mid] == key){
             ans = mid;
-            stsrt = mid+1;
+            start = mid+1;
         }else if(key>arr[mid]){
             start = mid+1;
         }else{
@@ -38,7 +38,7 @@ int lastOccurance(int arr[],int size,int key){
 }
 int main(){
     int arr[6] = {1,2,2,2,3,4};
-    cout<<"First Occurance of key is:"<<firstOccurance(arr,6,2);
+    cout<<"First Occurance of key is:"<<firstOccurance(arr,6,2)<<endl;
     cout<<"Last Occurance of key is:"<<lastOccurance(arr,6,2);
     return 0;
 }
