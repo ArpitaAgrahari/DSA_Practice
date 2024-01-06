@@ -6,9 +6,14 @@ void printArray(int arr[],int size){
     }
 }
 void sortingBubble(int arr[],int size){
-    for(int i = 0;i<size;i++){
-        if(arr[i]>arr[i+1]){
+    int start = 0;
+    int end = size-1;
+    int i=0;
+
+        while(start<=end){
+        if(arr[i]<arr[i+1]){
             swap(arr[i],arr[i+1]);
+    printArray(arr,6);
         }
     }
 }
