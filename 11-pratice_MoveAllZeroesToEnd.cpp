@@ -18,5 +18,6 @@ int main(){
     int arr[5] = {0,1,2,3,0};
     printArray(arr,5);
     shiftingZeroes(arr,5);
-    cout<<"Shifted Array: "<<shiftingZeroes(arr,5);
+    cout<<"Shifted Array: ";
+    printArray(arr,5);
 }
