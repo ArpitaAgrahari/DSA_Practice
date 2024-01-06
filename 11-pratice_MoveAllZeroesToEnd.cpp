@@ -13,10 +13,10 @@ int shiftingZeroes(int arr[],int size){
             j++;
         }
     }
+    return 0;
 }
 int main(){
     int arr[5] = {0,1,2,3,0};
-    printArray(arr,5);
     shiftingZeroes(arr,5);
     cout<<"Shifted Array: ";
     printArray(arr,5);
