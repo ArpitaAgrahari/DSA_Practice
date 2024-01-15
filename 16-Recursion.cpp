@@ -52,3 +52,25 @@
 //     cout<<endl;
 //     print(n);
 // }
+
+
+//steps count to reach home using stairs
+#include<iostream>
+using namespace std;
+void reachHome(int src, int dest){
+
+    if(src==dest){
+        cout<<"Reached Home!!";
+        return ;
+    }
+    src++;
+    reachHome(src,dest);
+      cout<<"source: "<< src<<"  Destination: "<<dest<<endl; 
+
+}
+int main(){
+    int dest = 15;
+    int src = 3;
+    cout<<endl;
+    reachHome(src,dest);
+}
