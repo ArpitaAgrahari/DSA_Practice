@@ -54,23 +54,43 @@
 // }
 
 
-//steps count to reach home using stairs
+// //steps count to reach home using stairs
+// #include<iostream>
+// using namespace std;
+// void reachHome(int src, int dest){
+
+//     if(src==dest){
+//         cout<<"Reached Home!!";
+//         return ;
+//     }
+//     src++;
+//     reachHome(src,dest);
+//       cout<<"source: "<< src<<"  Destination: "<<dest<<endl; 
+
+// }
+// int main(){
+//     int dest = 15;
+//     int src = 3;
+//     cout<<endl;
+//     reachHome(src,dest);
+// }
+
+
+//fibonaaci series
 #include<iostream>
 using namespace std;
-void reachHome(int src, int dest){
-
-    if(src==dest){
-        cout<<"Reached Home!!";
-        return ;
+int fibonaaci(int n){
+    if(n==0){
+        return 0;
+    }if(n==1){
+        return 1;
     }
-    src++;
-    reachHome(src,dest);
-      cout<<"source: "<< src<<"  Destination: "<<dest<<endl; 
-
+    int ans = fibonaaci(n-1) +fibonaaci(n-2);
+    return ans;
 }
 int main(){
-    int dest = 15;
-    int src = 3;
-    cout<<endl;
-    reachHome(src,dest);
+    int n;
+    cin>>n;
+    int ans = fibonaaci(n);
+    cout<<ans<<endl;
 }
