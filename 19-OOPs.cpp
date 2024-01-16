@@ -61,3 +61,59 @@
 // }
 
 
+// #include<iostream>
+// using namespace std;
+// class myClass{
+//     public:
+//     myClass(){
+//         cout<<"Constructor declared.";
+//     }
+// };
+// int main(){
+//     myClass Arp;
+//     return 0;
+// }
+
+// #include<iostream>
+// using namespace std;
+// class Aru{
+//     public:
+//     Aru(){
+//         cout<<"Harshit declared.";
+//     }
+// };
+// int main(){
+//     Aru arp;
+// }
+
+
+// #include<iostream>
+// #include<string>
+// using namespace std;
+// class Details{
+//     public:
+//         string name;
+//         string gender;
+//         int age;
+
+//         Details(string x,string y,int z){
+//             name = x;
+//             gender = y;
+//             age = z;
+//         }
+// };
+// int main(){
+//     Details Arp("Arpita","Female",20);
+//     cout<<"Name: "<<Arp.name<<" Gender: "<<Arp.gender<<" Age: "<<Arp.age<<endl;
+//     return 0;
+// }
+
+#include<iostream>
+#include<string>
+using namespace std;
+class Shop{
+    public:
+        string name;
+        string invention;
+        int
+}
