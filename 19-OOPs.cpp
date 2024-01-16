@@ -108,12 +108,25 @@
 //     return 0;
 // }
 
-#include<iostream>
-#include<string>
-using namespace std;
-class Shop{
-    public:
-        string name;
-        string invention;
-        int
-}
+
+
+// #include<iostream>
+// #include<string>
+// using namespace std;
+// class Shop{
+//     public:
+//         string name;
+//         string products;
+//         string brand;
+//         int items;
+//         Shop(string x,string y,string z, int a){
+//             name = x;
+//             products = y;
+//             brand = z;
+//             items = a;
+//         }
+// };
+// int main(){
+//     Shop myShop("Lovely","Sweets","Lovely",500);
+//     cout<<"Shop name: "<<myShop.name<<" Products: "<<myShop.products<<" brand: "<<myShop.brand<<" items count: "<<myShop.items<<endl;
+// }
