@@ -1,17 +1,16 @@
-int lastOccurance(int arr[],int size,int key){
-//     start = 0;
-//     end = size-1;
-//     mid = (start+end)/2;
-//         while(start<=end){
-//         if(arr[mid] == key){
-//             ans = mid;
-//             end = mid+1;
-//         }else if(key>arr[mid]){
-//             start = mid+1;
-//         }else{
-//             end = mid-1;
-//         }
-//         mid = (start+end)/2;
-//     }
-//     return ans;
-// }
+#include<iostream>
+using namespace std;
+class Arpita{
+    int Hello;
+    char Hello2;
+    float Hello3;
+};
+int main(){
+    Arpita A1;
+    Arpita A2;
+    Arpita A3;
+    cout<<"size: " <<sizeof(A1)<<endl;
+    cout<<"size: " <<sizeof(A2)<<endl;
+    cout<<"size: " <<sizeof(A3)<<endl;
+    return 0;
+}
