@@ -229,14 +229,40 @@
 
 //constructor in cpp
 //constructor is bsically automatically called whenever object of class is created.
+// #include<iostream>
+// using namespace std;
+// class myclass{
+//     public:
+//         string name;
+//         int id;
+//         string state;
+//             myclass(string x,int y,string z){   //this cpnstructor is defined inside the class
+//                 name = x;
+//                 id = y;
+//                 state = z;
+//             }
+// };
+// int main(){
+//     myclass obj("Arpita",12218430,"UP");
+//     cout<<obj.name<<" "<<obj.id<<" "<<obj.state<<endl;
+// }
+
+
 #include<iostream>
 using namespace std;
 class myclass{
     public:
-        myclass(){
-            cout<<"Constrcutor called"<<endl;
-        }
+        string name;
+        int id;
+        string state;
+            myclass(string x,int y,string z);
 };
+myclass::myclass(string x,int y,string z){
+    name = x;
+    id = y;
+    state = z;
+}
 int main(){
-    myclass obj;
+    myclass obj("Arpita",12218430,"UP");
+    cout<<obj.name<<" "<<obj.id<<" "<<obj.state<<endl;
 }
