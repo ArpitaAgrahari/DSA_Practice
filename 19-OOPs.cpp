@@ -130,3 +130,22 @@
 //     Shop myShop("Lovely","Sweets","Lovely",500);
 //     cout<<"Shop name: "<<myShop.name<<" Products: "<<myShop.products<<" brand: "<<myShop.brand<<" items count: "<<myShop.items<<endl;
 // }
+
+
+
+#include<iostream>
+#include<string>
+using namespace std;
+class myClass{
+    public:
+        int rollno;
+        string name;
+};
+
+int main(){
+     myClass Student;
+     Student.rollno = 3;
+     Student.name = "Arpita";
+     cout<<"Rollno: "<<Student.rollno<<endl;
+     cout<<"Name: "<<Student.name<<endl;
+}
