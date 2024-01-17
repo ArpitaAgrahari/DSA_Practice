@@ -329,3 +329,31 @@
 //     obj.setAge(32);
 //     cout<<"Age : "<<obj.getAge()<<endl;
 // }
+
+
+
+
+//inheritance: to inherit attributes and methods from one class to another
+//derived class (child) - the class that inherits from another class
+// base class (parent) - the class being inherited from
+// To inherit from a class, use the : symbol.
+
+#include<iostream>
+using namespace std;
+class Employee{
+    public:
+        string name = "Arpita";
+        int salary = 500000;
+            void age(){
+                cout<<"confidential!!!"<<endl;
+            }
+};
+class Arpita:public Employee{
+    public:
+        string state = "Up";
+};
+int main(){
+    Employee obj;
+    obj.age();
+    cout<<obj.name<<" " <<obj.state;
+}
