@@ -277,4 +277,11 @@
 
  //Note: By default, all members of a class are private if you don't specify an access specifier.
 
- 
+
+
+
+//Encapulsation:
+//it means to make sure that "sensitive" data is hidden from users.
+//to make it possible we use private access modifier
+
+//if we want to modify private access modifiers then we can use getter or setter.
