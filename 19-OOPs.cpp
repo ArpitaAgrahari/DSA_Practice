@@ -132,20 +132,53 @@
 // }
 
 
+// defining class and calling objects accordingly
+// #include<iostream>
+// #include<string>
+// using namespace std;
+// class myClass{
+//     public:
+//         int rollno;
+//         string name;
+// };
 
-#include<iostream>
-#include<string>
-using namespace std;
-class myClass{
-    public:
-        int rollno;
-        string name;
-};
+// int main(){
+//      myClass Student;
+//      Student.rollno = 3;
+//      Student.name = "Arpita";
+//      cout<<"Rollno: "<<Student.rollno<<endl;
+//      cout<<"Name: "<<Student.name<<endl;
+// }
 
-int main(){
-     myClass Student;
-     Student.rollno = 3;
-     Student.name = "Arpita";
-     cout<<"Rollno: "<<Student.rollno<<endl;
-     cout<<"Name: "<<Student.name<<endl;
-}
+
+//multiple calling of object in single class
+// #include<iostream>
+// using namespace std;
+// class myclass{
+//     public:
+//         int id;
+//         string name;
+//         string state;
+// };
+// int main(){
+//     //calling first object instance
+//     myclass Arp1;
+//     Arp1.id = 12218430;
+//     Arp1.name = "Arpita";
+//     Arp1.state = "UP";
+
+//     //calling second object instance
+//     myclass Har;
+//     Har.id = 12294032;
+//     Har.name ="Harshit";
+//     Har.state = "Kanpur";
+
+//     cout<<Arp1.id<<" "<<Arp1.name<<" "<<Arp1.state<<endl;
+//     cout<<Har.id<<" "<<Har.name<<" "<<Har.state<<endl;
+
+// }
+
+
+//methods = methods are function inside class . 
+
+//working and implementtation of methdos in program
