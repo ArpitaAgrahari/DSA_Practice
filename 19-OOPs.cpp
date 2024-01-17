@@ -248,21 +248,33 @@
 // }
 
 
-#include<iostream>
-using namespace std;
-class myclass{
-    public:
-        string name;
-        int id;
-        string state;
-            myclass(string x,int y,string z);
-};
-myclass::myclass(string x,int y,string z){  //this constructor is defined otuside the class
-    name = x;
-    id = y;
-    state = z;
-}
-int main(){
-    myclass obj("Arpita",12218430,"UP");
-    cout<<obj.name<<" "<<obj.id<<" "<<obj.state<<endl;
-}
+// #include<iostream>
+// using namespace std;
+// class myclass{
+//     public:
+//         string name;
+//         int id;
+//         string state;
+//             myclass(string x,int y,string z);
+// };
+// myclass::myclass(string x,int y,string z){  //this constructor is defined otuside the class
+//     name = x;
+//     id = y;
+//     state = z;
+// }
+// int main(){
+//     myclass obj("Arpita",12218430,"UP");
+//     cout<<obj.name<<" "<<obj.id<<" "<<obj.state<<endl;
+// }
+
+
+//In C++, there are three access specifiers:
+
+//public - members are accessible from outside the class
+ //private - members cannot be accessed (or viewed) from outside the class.
+ //protected - members cannot be accessed from outside the class, however, they can be accessed in inherited classes.
+
+
+ //Note: By default, all members of a class are private if you don't specify an access specifier.
+
+ 
