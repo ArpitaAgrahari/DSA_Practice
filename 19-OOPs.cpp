@@ -307,23 +307,25 @@
 // }
 
 
-#include<iostream>
-using namespace std;
-class Employee{
-    private:
-        int age;
-    public:
-    //setter
-        void setAge(int a){
-            age = a;
-        }
-    //getter
-        int getAge(){
-            return age;
-        }
-};
-int main(){
-    Employee obj;
-    obj.setAge(32);
-    cout<<"Age : "<<obj.getAge()<<endl;
-}
+
+//example 2:
+// #include<iostream>
+// using namespace std;
+// class Employee{
+//     private:
+//         int age;
+//     public:
+//     //setter
+//         void setAge(int a){
+//             age = a;
+//         }
+//     //getter
+//         int getAge(){
+//             return age;
+//         }
+// };
+// int main(){
+//     Employee obj;
+//     obj.setAge(32);
+//     cout<<"Age : "<<obj.getAge()<<endl;
+// }
