@@ -338,22 +338,45 @@
 // base class (parent) - the class being inherited from
 // To inherit from a class, use the : symbol.
 
+// #include<iostream>
+// using namespace std;
+// class Employee{
+//     public:
+//         string name = "Arpita";
+//         int salary = 500000;
+//             void age(){
+//                 cout<<"confidential!!!"<<endl;
+//             }
+// };
+// class Arpita:public Employee{
+//     public:
+//         string state = "Up";
+// };
+// int main(){
+//     Employee obj;
+//     obj.age();
+//     cout<<obj.name<<" " <<obj.state;
+// }
+
+//multilevel inheritence
+
 #include<iostream>
 using namespace std;
-class Employee{
+class myclass{
     public:
-        string name = "Arpita";
-        int salary = 500000;
-            void age(){
-                cout<<"confidential!!!"<<endl;
-            }
+        void myfunction(){
+            cout<<"Hello"<<endl;
+        }
 };
-class Arpita:public Employee{
-    public:
-        string state = "Up";
+class mychild:public myclass{
 };
+
+class mygrandchild:public mychild{
+
+};
+
 int main(){
-    Employee obj;
-    obj.age();
-    cout<<obj.name<<" " <<obj.state;
+    mygrandchild obj;
+    obj.myfunction();
+    return 0;
 }
