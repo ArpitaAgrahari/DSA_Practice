@@ -360,23 +360,53 @@
 
 //multilevel inheritence
 
+// #include<iostream>
+// using namespace std;
+// class myclass{
+//     public:
+//         void myfunction(){
+//             cout<<"Hello"<<endl;
+//         }
+// };
+// class mychild:public myclass{
+// };
+
+// class mygrandchild:public mychild{
+
+// };
+
+// int main(){
+//     mygrandchild obj;
+//     obj.myfunction();
+//     return 0;
+// }
+
+//multiple inheritence
+//A class can also be derived from more than one
+// base class, using a comma-separated list
+
 #include<iostream>
 using namespace std;
-class myclass{
+//first base class
+class Employee{
     public:
-        void myfunction(){
+        void HR(){
             cout<<"Hello"<<endl;
         }
 };
-class mychild:public myclass{
+//other  base class
+class Employee2{
+    public:
+        void Senior(){
+            cout<<"Nameste";
+        }
 };
-
-class mygrandchild:public mychild{
-
+//derived class
+class Arpita:public Employee,public Employee2{
 };
-
 int main(){
-    mygrandchild obj;
-    obj.myfunction();
+    Arpita obj;
+    obj.HR();
+    obj.Senior();
     return 0;
 }
