@@ -285,3 +285,45 @@
 //to make it possible we use private access modifier
 
 //if we want to modify private access modifiers then we can use getter or setter.
+// #include<iostream>
+// using namespace std;
+// class Employee{
+//     private:
+//         int salary;
+//     public:
+//     //working of setter  
+//         void setsalary(int s){
+//             salary = s;
+//         }
+//     //working of getter
+//         int getsalary(){
+//             return salary;
+//         }
+// };
+// int main(){
+//     Employee obj;
+//     obj.setsalary(500000);
+//     cout<<obj.getsalary();
+// }
+
+
+#include<iostream>
+using namespace std;
+class Employee{
+    private:
+        int age;
+    public:
+    //setter
+        void setAge(int a){
+            age = a;
+        }
+    //getter
+        int getAge(){
+            return age;
+        }
+};
+int main(){
+    Employee obj;
+    obj.setAge(32);
+    cout<<"Age : "<<obj.getAge()<<endl;
+}
