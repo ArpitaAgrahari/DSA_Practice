@@ -257,7 +257,7 @@ class myclass{
         string state;
             myclass(string x,int y,string z);
 };
-myclass::myclass(string x,int y,string z){
+myclass::myclass(string x,int y,string z){  //this constructor is defined otuside the class
     name = x;
     id = y;
     state = z;
