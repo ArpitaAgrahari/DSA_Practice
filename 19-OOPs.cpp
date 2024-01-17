@@ -200,10 +200,11 @@
 using namespace std;
 class myclass{
     public:
-        void myMethod(){
-            cout<<"Hello Arpita";
-        }
+        void myMethod();
 };
+void myclass::myMethod(){
+    cout<<"Hello Arpita";
+}
 int main(){
     myclass obj;
     obj.myMethod();
