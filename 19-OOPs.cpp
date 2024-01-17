@@ -181,7 +181,21 @@
 
 //methods = methods are function inside class . 
 
-//working and implementtation of methdos in program
+//working and implementtation of methdos inside of class
+// #include<iostream>
+// using namespace std;
+// class myclass{
+//     public:
+//         void myMethod(){
+//             cout<<"Hello Arpita";
+//         }
+// };
+// int main(){
+//     myclass obj;
+//     obj.myMethod();
+// }
+
+//implentation of method outside the class
 #include<iostream>
 using namespace std;
 class myclass{
