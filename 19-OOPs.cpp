@@ -196,16 +196,33 @@
 // }
 
 //implentation of method outside the class
-#include<iostream>
-using namespace std;
-class myclass{
-    public:
-        void myMethod();
-};
-void myclass::myMethod(){
-    cout<<"Hello Arpita";
-}
-int main(){
-    myclass obj;
-    obj.myMethod();
-}
+// #include<iostream>
+// using namespace std;
+// class myclass{
+//     public:
+//         void myMethod();
+// };
+// void myclass::myMethod(){
+//     cout<<"Hello Arpita";
+// }
+// int main(){
+//     myclass obj;
+//     obj.myMethod();
+// }
+
+
+//adding parameters to methods:'
+// #include<iostream>
+// using namespace std;
+// class Car{
+//     public:
+//         int ;
+// };
+// int Car::brand{
+//     return brand;
+// }
+// int main(){
+//     Car obj;
+//     cout<<obj.brand("SUV");
+
+// }
