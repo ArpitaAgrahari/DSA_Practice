@@ -385,28 +385,54 @@
 //A class can also be derived from more than one
 // base class, using a comma-separated list
 
+// #include<iostream>
+// using namespace std;
+// //first base class
+// class Employee{
+//     public:
+//         void HR(){
+//             cout<<"Hello"<<endl;
+//         }
+// };
+// //other  base class
+// class Employee2{
+//     public:
+//         void Senior(){
+//             cout<<"Nameste";
+//         }
+// };
+// //derived class
+// class Arpita:public Employee,public Employee2{
+// };
+// int main(){
+//     Arpita obj;
+//     obj.HR();
+//     obj.Senior();
+//     return 0;
+// }
+
+
+//inheritence Access modifier
 #include<iostream>
 using namespace std;
-//first base class
 class Employee{
-    public:
-        void HR(){
-            cout<<"Hello"<<endl;
-        }
+    protected:
+        int salary;
 };
-//other  base class
-class Employee2{
+class Programmer: public Employee{
     public:
-        void Senior(){
-            cout<<"Nameste";
+        int bonus;
+        void setSalary(int s){
+            salary = s;
         }
-};
-//derived class
-class Arpita:public Employee,public Employee2{
+        int getSalary(){
+            return salary;
+        }
 };
 int main(){
-    Arpita obj;
-    obj.HR();
-    obj.Senior();
-    return 0;
+    Programmer obj;
+    obj.setSalary(700000);
+    obj.bonus = 20000;
+    cout<<"Salary: "<<obj.getSalary()<<endl;
+    cout<<"Bonus: "<<obj.bonus<<endl;
 }
