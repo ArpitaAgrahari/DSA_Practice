@@ -224,5 +224,19 @@
 // int main(){
 //     Car obj;
 //     cout<<obj.brand("SUV");
-
 // }
+
+
+//constructor in cpp
+//constructor is bsically automatically called whenever object of class is created.
+#include<iostream>
+using namespace std;
+class myclass{
+    public:
+        myclass(){
+            cout<<"Constrcutor called"<<endl;
+        }
+};
+int main(){
+    myclass obj;
+}
