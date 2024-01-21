@@ -7,8 +7,12 @@
 #include<iostream>
 using namespace std;
 class LLNode{
-    
+    public:
+        int data;
+        LLNode* next;
 };
 int main(){
-
+    LLNode* node1 = new LLNode();
+    cout<<node1->data<<endl;
+    cout<<node1->next<<endl;
 }
