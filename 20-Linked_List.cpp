@@ -48,7 +48,7 @@ void InsertionAtHead(Node* &head,int d){
     temp->next = head;
     head = temp;
 }
-void print(node* &head){
+void print(Node* &head){
     Node* temp = head;
     while(temp!=NULL){
         cout<<temp<<" "<<endl;
@@ -58,4 +58,9 @@ void print(node* &head){
 }
 int main(){
     Node* node1 = new Node(10);
+    
+    Node* head = node1;
+    print(head);
+    InsertionAtHead(head,12);
+    print(head); 
 }
